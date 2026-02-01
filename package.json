@@ -1,15 +1,28 @@
 {
-  "name": "snapreel",
-  "version": "0.1.0",
+  "name": "reelfetch",
+  "version": "1.0.0",
   "private": true,
+  "description": "Download Instagram Reels Instantly - Fast, Free & HD Quality",
+  "author": "ReelFetch",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "tsc --noEmit",
+    "docker:dev": "docker compose up dev",
+    "docker:prod": "docker compose up prod --build",
+    "docker:build": "docker build -t reelfetch ."
   },
   "dependencies": {
+    "@vercel/analytics": "^1.4.1",
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.474.0",
     "next": "16.1.6",
+    "next-themes": "^0.4.4",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
@@ -22,5 +35,8 @@
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
