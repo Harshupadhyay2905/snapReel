@@ -15,6 +15,7 @@ import {
   HowItWorksSection,
   FAQSection,
 } from "@/components/ui";
+import { BannerAd, InFeedAd } from "@/components/ads";
 
 export default function HomePage() {
   const {
@@ -72,14 +73,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Ad Banner - After Hero */}
+      <BannerAd adSlot="YOUR_AD_SLOT_1" />
+
       {/* Features Section */}
       <FeaturesSection />
 
+      {/* Ad Banner - Between Sections */}
+      <InFeedAd adSlot="YOUR_AD_SLOT_2" />
+
       {/* How It Works Section */}
       <HowItWorksSection />
+
+      {/* Ad Banner - Before FAQ */}
+      <BannerAd adSlot="YOUR_AD_SLOT_3" />
 
       {/* FAQ Section */}
       <FAQSection />
     </>
   );
 }
+

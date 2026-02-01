@@ -1420,3 +1420,89 @@ body {
     --section-padding: 6rem;
   }
 }
+
+/* ============================================
+   Advertisement Styles
+   ============================================ */
+
+.ad-container {
+  margin: 2rem 0;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-placeholder {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border: 2px dashed var(--border-light);
+  border-radius: var(--radius-xl);
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-tertiary);
+  text-align: center;
+}
+
+.ad-placeholder-content span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ad-placeholder-content small {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.in-feed-ad {
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+}
+
+.banner-ad {
+  width: 100%;
+  max-width: 728px;
+  margin: 1rem auto;
+}
+
+.display-ad {
+  width: 300px;
+  height: 250px;
+}
+
+/* Hide ads label for production */
+.ad-container::before,
+.in-feed-ad::before {
+  content: "Advertisement";
+  display: block;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .display-ad {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+
+  .banner-ad {
+    max-width: 100%;
+  }
+}
