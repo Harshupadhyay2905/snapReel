@@ -1,6 +1,6 @@
 /**
  * Dynamic Sitemap Generation
- * Generates sitemap.xml for SEO
+ * Generates sitemap.xml for SEO with comprehensive page coverage
  */
 
 import { MetadataRoute } from "next";
@@ -10,30 +10,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = APP_URL;
   const currentDate = new Date().toISOString();
 
-  return [
+  // Define all pages with their SEO priority
+  const pages: MetadataRoute.Sitemap = [
+    // Homepage - highest priority
     {
       url: baseUrl,
       lastModified: currentDate,
       changeFrequency: "daily",
-      priority: 1,
+      priority: 1.0,
     },
+    // Main guide page - high priority for SEO
     {
       url: `${baseUrl}/how-to-download-instagram-reels`,
       lastModified: currentDate,
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
+    // Legal pages - lower priority
     {
       url: `${baseUrl}/privacy-policy`,
       lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.4,
     },
     {
       url: `${baseUrl}/terms`,
       lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.4,
     },
   ];
+
+  // Add alternate language versions if needed in future
+  // pages.push(...alternateLanguagePages);
+
+  return pages;
 }

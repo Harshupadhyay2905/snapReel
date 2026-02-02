@@ -18,10 +18,11 @@ export const APP_DESCRIPTION =
 // ============================================
 
 export const SEO = {
-  title: `${APP_NAME} - Download Instagram Reels Instantly`,
+  title: `${APP_NAME} - Download Instagram Reels Instantly | Free HD Quality`,
   description:
-    "Download Instagram Reels in HD quality for free. Fast, easy, and no login required. Save your favorite reels to watch offline.",
+    "Download Instagram Reels in HD quality for free. Fast, easy, and no login required. Save your favorite reels to watch offline on any device. Works on iPhone, Android, PC & Mac.",
   keywords: [
+    // Primary keywords
     "instagram reel downloader",
     "download instagram reels",
     "instagram video downloader",
@@ -30,6 +31,35 @@ export const SEO = {
     "instagram reel saver",
     "download reels hd",
     "free reel downloader",
+    // Long-tail keywords
+    "download instagram reels online free",
+    "instagram reel download without login",
+    "instagram reels video downloader hd",
+    "how to download instagram reels",
+    "download instagram reels to phone",
+    "save instagram reels to camera roll",
+    "instagram reels downloader without watermark",
+    "best instagram reel downloader 2026",
+    // Device-specific keywords
+    "download instagram reels iphone",
+    "download instagram reels android",
+    "instagram reel downloader pc",
+    "save instagram reels mac",
+    // Action keywords
+    "copy instagram reel link",
+    "paste instagram reel url download",
+    "instagram reel mp4 download",
+    "instagram reels to mp4 converter",
+    // Alternative phrasings
+    "ig reel downloader",
+    "ig reels saver",
+    "insta reel download",
+    "reel video download app",
+    "reels download online",
+    // Question-based keywords
+    "how to save instagram reels",
+    "can you download instagram reels",
+    "where to download instagram reels",
   ],
   ogImage: "/og-image.png",
   twitterCard: "summary_large_image" as const,

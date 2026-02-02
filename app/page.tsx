@@ -74,19 +74,19 @@ export default function HomePage() {
       </section>
 
       {/* Ad Banner - After Hero */}
-      <BannerAd adSlot="YOUR_AD_SLOT_1" />
+      <BannerAd adSlot="6048988580" />
 
       {/* Features Section */}
       <FeaturesSection />
 
       {/* Ad Banner - Between Sections */}
-      <InFeedAd adSlot="YOUR_AD_SLOT_2" />
+      <InFeedAd adSlot="6048988580" />
 
       {/* How It Works Section */}
       <HowItWorksSection />
 
       {/* Ad Banner - Before FAQ */}
-      <BannerAd adSlot="YOUR_AD_SLOT_3" />
+      <BannerAd adSlot="6048988580" />
 
       {/* FAQ Section */}
       <FAQSection />
