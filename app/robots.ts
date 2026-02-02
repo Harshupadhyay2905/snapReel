@@ -12,7 +12,7 @@ export default function robots(): MetadataRoute.Robots {
       // General rules for all crawlers
       {
         userAgent: "*",
-        allow: ["/", "/how-to-download-instagram-reels", "/privacy-policy", "/terms"],
+        allow: ["/", "/how-to-download-instagram-reels", "/blog/", "/privacy-policy", "/terms"],
         disallow: ["/api/", "/_next/", "/static/"],
       },
       // Googlebot specific rules

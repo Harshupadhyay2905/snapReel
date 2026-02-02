@@ -9,9 +9,11 @@ import { ArrowLeft } from "lucide-react";
 import { APP_NAME, APP_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "How to Download Instagram Reels - Complete Guide 2026",
+  // Title: 54 chars (optimal: 50-60 chars)
+  title: "How to Download Instagram Reels - 2026 Guide (Free)",
+  // Description: 159 chars (optimal: 150-160 chars)
   description:
-    "Learn how to download Instagram Reels in HD quality for free. Step-by-step guide to save reels to your iPhone, Android, PC or Mac using ReelFetch. No login required.",
+    "Download Instagram Reels in HD for free with this step-by-step guide. Save reels to iPhone, Android or PC. No app needed. Works instantly without login.",
   keywords: [
     "how to download instagram reels",
     "download instagram reels step by step",
@@ -27,9 +29,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "article",
-    title: "How to Download Instagram Reels - Complete Guide 2026",
+    title: "How to Download Instagram Reels - 2026 Guide (Free)",
     description:
-      "Step-by-step guide to download Instagram Reels in HD quality for free. Works on iPhone, Android, PC & Mac.",
+      "Download Instagram Reels in HD for free with this step-by-step guide. Save reels to iPhone, Android or PC.",
     url: `${APP_URL}/how-to-download-instagram-reels`,
     siteName: APP_NAME,
     publishedTime: "2026-01-01T00:00:00.000Z",
@@ -46,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Download Instagram Reels - Complete Guide",
-    description: "Step-by-step guide to download Instagram Reels in HD quality for free.",
+    title: "How to Download Instagram Reels - 2026 Guide (Free)",
+    description: "Download Reels in HD for free with this step-by-step guide. No app or login required.",
     images: ["/og-image.png"],
   },
 };
@@ -59,8 +61,8 @@ const articleStructuredData = {
     {
       "@type": "Article",
       "@id": `${APP_URL}/how-to-download-instagram-reels#article`,
-      headline: "How to Download Instagram Reels - Complete Guide 2026",
-      description: "Learn how to download Instagram Reels in HD quality for free. Step-by-step guide to save reels to your device.",
+      headline: "How to Download Instagram Reels - 2026 Guide (Free)",
+      description: "Download Instagram Reels in HD for free with this step-by-step guide. Save reels to iPhone, Android or PC.",
       image: `${APP_URL}/og-image.png`,
       datePublished: "2026-01-01T00:00:00.000Z",
       dateModified: new Date().toISOString(),
@@ -344,6 +346,43 @@ export default function HowToPage() {
               <p>
                 Try again with a different Reel or wait a few minutes before retrying.
               </p>
+            </section>
+
+            {/* Related Content - Internal Linking */}
+            <section>
+              <h2>Related Guides</h2>
+              <ul>
+                <li>
+                  <Link href="/blog/instagram-reel-downloader-without-watermark">
+                    Download Instagram Reels Without Watermark
+                  </Link> - Learn how to save clean, watermark-free videos
+                </li>
+                <li>
+                  <Link href="/">
+                    Free Instagram Reel Downloader
+                  </Link> - Try our tool now, no login required
+                </li>
+              </ul>
+            </section>
+
+            {/* CTA Section */}
+            <section style={{ textAlign: "center", marginTop: "2rem", padding: "2rem", background: "var(--color-surface)", borderRadius: "1rem" }}>
+              <h2>Ready to Download?</h2>
+              <p>Start downloading Instagram Reels in HD quality right now.</p>
+              <Link 
+                href="/" 
+                style={{ 
+                  display: "inline-block", 
+                  marginTop: "1rem", 
+                  padding: "0.75rem 2rem", 
+                  borderRadius: "0.5rem", 
+                  fontWeight: 600,
+                  textDecoration: "none"
+                }}
+                className="btn btn-primary"
+              >
+                Try {APP_NAME} Free →
+              </Link>
             </section>
           </article>
         </div>

@@ -18,9 +18,11 @@ export const APP_DESCRIPTION =
 // ============================================
 
 export const SEO = {
-  title: `${APP_NAME} - Download Instagram Reels Instantly | Free HD Quality`,
+  // Title: ~56 chars (optimal: 50-60)
+  title: `Free Instagram Reel Downloader - HD Quality | ${APP_NAME}`,
+  // Description: ~158 chars (optimal: 150-160)
   description:
-    "Download Instagram Reels in HD quality for free. Fast, easy, and no login required. Save your favorite reels to watch offline on any device. Works on iPhone, Android, PC & Mac.",
+    "Download Instagram Reels in HD for free. No login required. Save reels to your phone or PC instantly. Fast, easy & works on iPhone, Android, and desktop.",
   keywords: [
     // Primary keywords
     "instagram reel downloader",
@@ -136,8 +138,8 @@ export const API_ENDPOINTS = {
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/how-to-download-instagram-reels", label: "How It Works" },
+  { href: "/blog/instagram-reel-downloader-without-watermark", label: "Blog" },
   { href: "/privacy-policy", label: "Privacy" },
-  { href: "/terms", label: "Terms" },
 ];
 
 // ============================================
@@ -146,8 +148,9 @@ export const NAV_LINKS = [
 
 export const FOOTER_LINKS = {
   product: [
-    { href: "/", label: "Home" },
-    { href: "/how-to-download-instagram-reels", label: "How It Works" },
+    { href: "/", label: "Instagram Reel Downloader" },
+    { href: "/how-to-download-instagram-reels", label: "How to Download Reels" },
+    { href: "/blog/instagram-reel-downloader-without-watermark", label: "Download Without Watermark" },
   ],
   legal: [
     { href: "/privacy-policy", label: "Privacy Policy" },

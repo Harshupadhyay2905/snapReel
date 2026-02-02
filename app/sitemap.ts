@@ -26,6 +26,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    // Blog pages - high priority for content SEO
+    {
+      url: `${baseUrl}/blog/instagram-reel-downloader-without-watermark`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
     // Legal pages - lower priority
     {
       url: `${baseUrl}/privacy-policy`,
